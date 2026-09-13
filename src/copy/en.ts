@@ -145,7 +145,7 @@ export const footer = {
   dexUrl: '',
   x: 'x',
   source: 'source',
-  sourceUrl: 'https://github.com/flywatt-live/flywatt',
+  sourceUrl: 'https://github.com/flywatt-live/watt-the-fly',
   soon: 'soon',
 };
 
