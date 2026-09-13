@@ -1,3 +1,5 @@
+<p align="center"><img src="public/logo.png" width="180" alt="a fly inside a light bulb"></p>
+
 # WATT THE FLY
 
 A fruit fly connectome, wired to a light bulb. **https://flywatt.live**
