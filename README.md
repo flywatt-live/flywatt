@@ -8,7 +8,7 @@ A fruit fly connectome, wired to a light bulb. **https://flywatt.live**
 P(t) = S(t) / Δt × E_ap
 ```
 
-with S(t) the spike count of the loaded network in a sliding 100 ms window and E_ap = 31.9 pJ. At the calibrated mean rate the network draws about 6.5 µW. Nothing on the page is a recording. Every number is read from the running simulation, from `public/data/meta.json`, or from `src/sim/params.ts`. No live insect is involved and nothing is connected to hardware.
+with S(t) the spike count of the loaded network in a sliding 100 ms window and E_ap = 31.9 pJ. At the calibrated mean rate the network draws about 6.5 µW. Every number is read from the running simulation, from `public/data/meta.json`, or from `src/sim/params.ts`. No live insect is involved and nothing is connected to hardware.
 
 Code MIT. Data CC BY 4.0. Details in [docs/model.md](docs/model.md).
 

@@ -34,7 +34,9 @@ function boot() {
   document.documentElement.dataset.reduced = String(caps.reducedMotion);
 
   document.getElementById('tagline')!.textContent = hero.tagline;
-  document.getElementById('tagline-sub')!.textContent = hero.sub;
+  const sub = document.getElementById('tagline-sub')!;
+  sub.textContent = hero.sub;
+  sub.hidden = !hero.sub;
   document.getElementById('hero-hint')!.textContent = hero.hint;
   const bridge = new SimBridge();
   const hud = mountHud(bridge);

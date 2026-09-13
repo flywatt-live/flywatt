@@ -44,6 +44,32 @@
   white-space: nowrap;
 }
 
+/* the live lamp, top left: a red square that blinks with simulated time */
+.live {
+  position: fixed;
+  top: 28px;
+  left: calc(var(--rail) + 12px);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: rgb(122 139 148 / 0.9);
+  pointer-events: none;
+}
+.live-dot {
+  width: 9px;
+  height: 9px;
+  background: rgb(176 52 44 / 0.25);
+  border: var(--hairline) solid rgb(176 52 44 / 0.6);
+  transition: background-color 0.08s linear;
+}
+.live.on .live-dot {
+  background: var(--fault);
+}
+
 .xlink {
   position: fixed;
   top: 20px;

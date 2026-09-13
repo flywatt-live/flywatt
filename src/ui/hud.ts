@@ -13,6 +13,9 @@ export function mountHud(bridge: SimBridge) {
   const loadline = document.getElementById('loadline')!;
   const stats = document.getElementById('hud-stats')!;
   wattLabel.textContent = labels.currentDraw;
+  // the live lamp: lit on even half-seconds of simulated time, so it blinks only while the simulation advances
+  const live = document.getElementById('live')!;
+  document.getElementById('live-label')!.textContent = labels.live;
   loadline.textContent = labels.loadingConnectome;
   stats.innerHTML = `
     <div><span class="readout" id="st-energy">0 J</span><span class="label">${hero.stats.energy}</span></div>
@@ -58,6 +61,7 @@ export function mountHud(bridge: SimBridge) {
       watt.textContent = t;
       lastText = t;
     }
+    live.classList.toggle('on', Math.floor(f.simMs / 500) % 2 === 0);
     if (++n % 8 === 0) {
       const st = bridge.stats;
       stEnergy.textContent = fmtSI(st.joulesBefore + st.joules, 'J');

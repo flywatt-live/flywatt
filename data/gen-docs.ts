@@ -96,7 +96,7 @@ const llms = `# ${site.title}
 
 ${site.url}
 
-FLYWATT is a single page. A leaky integrate-and-fire simulation of ${n(meta.n_neurons)} neurons and ${n(meta.n_synapses)} synapses from the ${meta.dataset.name} ${meta.dataset.version} (${meta.dataset.license}) runs in a Web Worker. Its spikes drive an incandescent bulb in a three.js scene; the bulb is the page's only light. Power is spike rate times ${pJ} per action potential (an estimate from Attwell and Laughlin 2001). Every number on the page is read from the running simulation or from the data files; nothing is hardcoded and nothing is a pre-rendered loop. No live insect, no hardware.
+FLYWATT is a single page. A leaky integrate-and-fire simulation of ${n(meta.n_neurons)} neurons and ${n(meta.n_synapses)} synapses from the ${meta.dataset.name} ${meta.dataset.version} (${meta.dataset.license}) runs in a Web Worker. Its spikes drive an incandescent bulb in a three.js scene; the bulb is the page's only light. Power is spike rate times ${pJ} per action potential (an estimate from Attwell and Laughlin 2001). Every number on the page is read from the running simulation or from the data files; nothing is hardcoded. No live insect, no hardware.
 
 ## Sections
 

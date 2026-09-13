@@ -26,6 +26,7 @@ export const sections = {
 
 export const labels = {
   currentDraw: 'current draw',
+  live: 'live',
   cumulative: 'cumulative, this session',
   stimulusPhase: 'stimulus phase',
   neuronsLoaded: 'neurons loaded',
@@ -130,7 +131,7 @@ export const provenance = {
     'Dynamics are modeled. Neurons are leaky integrate-and-fire with the parameters listed in params.ts. Synaptic sign comes from the transmitter prediction field in the source data. Global synaptic gain is calibrated to hold mean firing rate between 2 and 8 Hz.',
   power: (value: string, reference: string) =>
     `Power is computed as spike rate multiplied by an energy cost per action potential of ${value}, taken from ${reference}. This is an estimate.`,
-  driven: 'The bulb brightness, the meter and the page luminance are driven by the running simulation. Nothing on this page is a pre-rendered loop.',
+  driven: 'The bulb brightness, the meter and the page luminance are driven by the running simulation.',
   noInsect: 'No live insect was used. Nothing here is connected to hardware.',
   flyModel: 'The jar, the wire, the bulb, the socket, the meter and the bench are built in code from primitives. The fly mesh is Fly by Poly by Google (CC-BY 3.0, via Poly Pizza), repainted; its motion is ours.',
   fonts: 'Type: Basteleur by Keussel (Velvetyne, OFL) and Departure Mono by Helena Zhang (OFL).',
@@ -150,7 +151,7 @@ export const footer = {
 
 export const hero = {
   tagline: 'A fruit fly connectome, wired to a light bulb.',
-  sub: 'Live. Nothing here is a recording.',
+  sub: '',
   stats: {
     energy: 'energy, since launch',
     simTime: 'running since launch',
