@@ -144,7 +144,7 @@ export const footer = {
   dexUrl: '',
   x: 'x',
   source: 'source',
-  sourceUrl: '',
+  sourceUrl: 'https://github.com/flywatt-live/flywatt',
   soon: 'soon',
 };
 
