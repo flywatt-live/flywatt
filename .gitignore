@@ -1,0 +1,10 @@
+node_modules/
+dist/
+data/raw/
+data/out/
+flywatt-dist.zip
+.DS_Store
+*.log
+launch/
+.claude/
+BRIEF.md

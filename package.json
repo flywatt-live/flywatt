@@ -1,0 +1,47 @@
+{
+  "name": "flywatt",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A fruit fly connectome, wired to a light bulb.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "fonts": "tsx data/fonts.ts",
+    "data:fetch": "tsx data/fetch.ts",
+    "data:probe": "tsx data/probe.ts",
+    "data:build": "tsx data/build.ts",
+    "data:calibrate": "tsx data/calibrate.ts",
+    "data:verify": "tsx data/verify.ts",
+    "data:docs": "tsx data/gen-docs.ts",
+    "favicon": "tsx tools/favicon.ts",
+    "package": "tsx tools/package-dist.ts",
+    "data:stats": "tsx data/netstats.ts"
+  },
+  "dependencies": {
+    "fflate": "^0.8.3",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.26",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "^4.5.0",
+    "@gltf-transform/functions": "^4.5.0",
+    "@types/node": "^24.0.0",
+    "@types/three": "^0.186.0",
+    "apache-arrow": "^21.2.0",
+    "fzstd": "^0.1.1",
+    "lz4js": "^0.2.0",
+    "nodejs-polars": "^0.26.0",
+    "sharp": "^0.34.0",
+    "tsx": "^4.23.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "sharp@0.35.4": true,
+    "sharp@0.34.5": true
+  }
+}

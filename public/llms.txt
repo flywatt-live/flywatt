@@ -1,0 +1,24 @@
+# FLYWATT
+
+> A fruit fly connectome, wired to a light bulb.
+
+https://flywatt.live
+
+FLYWATT is a single page. A leaky integrate-and-fire simulation of 38,178 neurons and 5,124,215 synapses from the Janelia FlyEM Male CNS connectome v1.0 (CC BY 4.0) runs in a Web Worker. Its spikes drive an incandescent bulb in a three.js scene; the bulb is the page's only light. Power is spike rate times 31.9 pJ per action potential (an estimate from Attwell and Laughlin 2001). Every number on the page is read from the running simulation or from the data files; nothing is hardcoded and nothing is a pre-rendered loop. No live insect, no hardware.
+
+## Sections
+
+- [apparatus](/sections/apparatus.md): the scene and the current draw readout
+- [the wire](/sections/wire.md): six live panels, from the stimulus to the bulb gain
+- [the circuit](/sections/circuit.md): the 89 cell types loaded, with counts and transmitter predictions
+- [the arithmetic](/sections/arithmetic.md): P = S / Δt × E_ap, with sources
+- [the record](/sections/record.md): session statistics
+- [provenance](/sections/provenance.md): data, model, constants, licences
+
+## Data
+
+- Dataset: Janelia FlyEM Male CNS connectome v1.0, CC BY 4.0, https://male-cns.janelia.org/download/
+- Loaded: 38,178 neurons, 559,750 connections, 5,124,215 synapses; the visual input to wing motor pathway
+- Files: /data/meta.json, /data/neurons.d19798da.fwb, /data/connectome.d19798da.fwb (gzip inside)
+- Fonts: Basteleur (Velvetyne, OFL), Departure Mono (OFL)
+- Scene: apparatus built in code; fly mesh by Poly by Google, CC-BY 3.0, via Poly Pizza

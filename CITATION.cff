@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this code, cite it; if you use the numbers, cite the dataset and the two papers below."
+title: "FLYWATT: a fruit fly connectome, wired to a light bulb"
+type: software
+url: "https://flywatt.live"
+license: MIT
+version: 0.1.0
+date-released: 2026-09-13
+abstract: "A leaky integrate-and-fire simulation of 38,178 neurons and 5,124,215 synapses of the Janelia FlyEM Male CNS connectome v1.0 (visual input to wing motor pathway), running in a Web Worker, driving an incandescent bulb. Power is spike rate times a literature estimate of the energy of one action potential."
+references:
+  - type: data
+    title: "Male CNS connectome v1.0"
+    authors:
+      - name: "Janelia FlyEM Project Team, with Google Research and collaborators"
+    url: "https://male-cns.janelia.org/"
+    license: CC-BY-4.0
+  - type: article
+    title: "An energy budget for signaling in the grey matter of the brain"
+    authors:
+      - family-names: Attwell
+        given-names: David
+      - family-names: Laughlin
+        given-names: Simon B.
+    journal: "Journal of Cerebral Blood Flow and Metabolism"
+    volume: 21
+    issue: 10
+    start: 1133
+    end: 1145
+    year: 2001
+    doi: 10.1097/00004647-200110000-00001
+  - type: article
+    title: "Energy demands of diverse spiking cells from the neocortex, hippocampus, and thalamus"
+    authors:
+      - family-names: Moujahid
+        given-names: Abdelmalik
+      - family-names: d'Anjou
+        given-names: Alicia
+      - family-names: Graña
+        given-names: Manuel
+    journal: "Frontiers in Computational Neuroscience"
+    volume: 8
+    start: 41
+    year: 2014
+    doi: 10.3389/fncom.2014.00041

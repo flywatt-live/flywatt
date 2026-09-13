@@ -1,0 +1,104 @@
+/* Instrument panels: square, hairline, bezel ticks, copper connectors on the wire. */
+.panel {
+  position: relative;
+  background: var(--ink);
+  border: var(--hairline) solid rgb(122 139 148 / 0.4);
+  display: flex;
+  flex-direction: column;
+  flex: none;
+}
+/* bezel tick marks in the corners */
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+  padding: 10px 14px 8px;
+  border-bottom: var(--hairline) solid rgb(122 139 148 / 0.25);
+}
+.panel-title {
+  white-space: nowrap;
+  font-family: var(--font-serif);
+  font-size: var(--fs-label);
+  letter-spacing: 0.04em;
+  color: rgb(232 220 192 / var(--warm-alpha));
+}
+.panel-unit {
+  color: rgb(122 139 148 / 0.8);
+  text-align: right;
+}
+.panel-caption {
+  margin: 0;
+  padding: 8px 14px 10px;
+  font-size: 12.5px;
+  line-height: 1.45;
+  max-width: none;
+  color: rgb(232 220 192 / 0.72);
+  border-bottom: var(--hairline) solid rgb(122 139 148 / 0.18);
+}
+.panel canvas {
+  width: 100%;
+  flex: 1;
+}
+.panel-foot {
+  flex-wrap: wrap;
+  padding: 8px 14px 10px;
+  border-top: var(--hairline) solid rgb(122 139 148 / 0.25);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 34px;
+}
+
+/* the wire: sizes and connectors */
+.wire-track .panel {
+  height: 560px;
+}
+.wire-track .panel + .panel {
+  margin-left: 56px;
+}
+.wire-track .panel + .panel::before {
+  content: '';
+  position: absolute;
+  left: -57px;
+  top: 50%;
+  width: 56px;
+  height: 1px;
+  background: var(--copper);
+}
+.wire-track .panel + .panel::after {
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: calc(50% - 2px);
+  width: 5px;
+  height: 5px;
+  background: var(--copper);
+}
+.panel-stim {
+  width: 380px;
+}
+.panel-raster {
+  width: 1240px;
+}
+.panel-rates {
+  width: 560px;
+}
+.panel-sum {
+  width: 280px;
+}
+.panel-smooth {
+  width: 560px;
+}
+.panel-gain {
+  width: 400px;
+}
+
+/* the record */
+.record-grid .panel {
+  height: 300px;
+}
+.record-grid .panel-text {
+  height: auto;
+  min-height: 300px;
+}

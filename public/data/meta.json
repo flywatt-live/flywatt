@@ -1,0 +1,1543 @@
+{
+  "schema": 1,
+  "built_at": "2026-09-12T18:33:10.722Z",
+  "build_hash": "d19798da",
+  "dataset": {
+    "name": "Janelia FlyEM Male CNS connectome",
+    "short": "MaleCNS",
+    "version": "v1.0",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://male-cns.janelia.org/",
+    "download_url": "https://male-cns.janelia.org/download/",
+    "citation": "Janelia FlyEM Project Team, Male CNS connectome v1.0, with Google Research and collaborators.",
+    "files": [
+      {
+        "name": "body-annotations-male-cns-v1.0-minconf-0.5.feather",
+        "bytes": 14483314
+      },
+      {
+        "name": "body-neurotransmitters-male-cns-v1.0.feather",
+        "bytes": 43282834
+      },
+      {
+        "name": "connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+        "bytes": 1051241946
+      }
+    ]
+  },
+  "n_neurons": 38178,
+  "n_edges": 559750,
+  "n_synapses": 5124215,
+  "full": {
+    "n_bodies_annotated": 211577,
+    "n_bodies_typed": 164506,
+    "n_edges_total": 151856684,
+    "n_synapses_total": 311833243
+  },
+  "regions": [
+    "sensory",
+    "lamina",
+    "medulla",
+    "lobula",
+    "central",
+    "descending",
+    "motor"
+  ],
+  "region_offsets": [
+    0,
+    3377,
+    14017,
+    36738,
+    37669,
+    38103,
+    38111,
+    38178
+  ],
+  "types": [
+    {
+      "name": "R1-R6",
+      "region": 0,
+      "offset": 0,
+      "count": 3377,
+      "nt": {
+        "histamine": 3377
+      },
+      "sign": -1,
+      "sides": [
+        1129,
+        2248,
+        0
+      ]
+    },
+    {
+      "name": "Am1",
+      "region": 1,
+      "offset": 3377,
+      "count": 2,
+      "nt": {
+        "gaba": 2
+      },
+      "sign": -1,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "C2",
+      "region": 1,
+      "offset": 3379,
+      "count": 1745,
+      "nt": {
+        "gaba": 1706,
+        "acetylcholine": 39
+      },
+      "sign": -1,
+      "sides": [
+        871,
+        874,
+        0
+      ]
+    },
+    {
+      "name": "C3",
+      "region": 1,
+      "offset": 5124,
+      "count": 1779,
+      "nt": {
+        "gaba": 1779
+      },
+      "sign": -1,
+      "sides": [
+        887,
+        892,
+        0
+      ]
+    },
+    {
+      "name": "L1",
+      "region": 1,
+      "offset": 6903,
+      "count": 1776,
+      "nt": {
+        "glutamate": 1776
+      },
+      "sign": -1,
+      "sides": [
+        884,
+        892,
+        0
+      ]
+    },
+    {
+      "name": "L2",
+      "region": 1,
+      "offset": 8679,
+      "count": 1779,
+      "nt": {
+        "acetylcholine": 1779
+      },
+      "sign": 1,
+      "sides": [
+        886,
+        893,
+        0
+      ]
+    },
+    {
+      "name": "L3",
+      "region": 1,
+      "offset": 10458,
+      "count": 1772,
+      "nt": {
+        "acetylcholine": 1772
+      },
+      "sign": 1,
+      "sides": [
+        880,
+        892,
+        0
+      ]
+    },
+    {
+      "name": "L5",
+      "region": 1,
+      "offset": 12230,
+      "count": 1787,
+      "nt": {
+        "acetylcholine": 1787
+      },
+      "sign": 1,
+      "sides": [
+        889,
+        898,
+        0
+      ]
+    },
+    {
+      "name": "Mi1",
+      "region": 2,
+      "offset": 14017,
+      "count": 1773,
+      "nt": {
+        "acetylcholine": 1773
+      },
+      "sign": 1,
+      "sides": [
+        886,
+        887,
+        0
+      ]
+    },
+    {
+      "name": "T4a",
+      "region": 2,
+      "offset": 15790,
+      "count": 1684,
+      "nt": {
+        "acetylcholine": 1684
+      },
+      "sign": 1,
+      "sides": [
+        835,
+        849,
+        0
+      ]
+    },
+    {
+      "name": "T4b",
+      "region": 2,
+      "offset": 17474,
+      "count": 1690,
+      "nt": {
+        "acetylcholine": 1690
+      },
+      "sign": 1,
+      "sides": [
+        844,
+        846,
+        0
+      ]
+    },
+    {
+      "name": "T4c",
+      "region": 2,
+      "offset": 19164,
+      "count": 1778,
+      "nt": {
+        "acetylcholine": 1778
+      },
+      "sign": 1,
+      "sides": [
+        895,
+        883,
+        0
+      ]
+    },
+    {
+      "name": "T4d",
+      "region": 2,
+      "offset": 20942,
+      "count": 1709,
+      "nt": {
+        "acetylcholine": 1709
+      },
+      "sign": 1,
+      "sides": [
+        850,
+        859,
+        0
+      ]
+    },
+    {
+      "name": "T5a",
+      "region": 2,
+      "offset": 22651,
+      "count": 1664,
+      "nt": {
+        "acetylcholine": 1664
+      },
+      "sign": 1,
+      "sides": [
+        826,
+        838,
+        0
+      ]
+    },
+    {
+      "name": "T5b",
+      "region": 2,
+      "offset": 24315,
+      "count": 1715,
+      "nt": {
+        "acetylcholine": 1715
+      },
+      "sign": 1,
+      "sides": [
+        863,
+        852,
+        0
+      ]
+    },
+    {
+      "name": "T5c",
+      "region": 2,
+      "offset": 26030,
+      "count": 1720,
+      "nt": {
+        "acetylcholine": 1720
+      },
+      "sign": 1,
+      "sides": [
+        862,
+        858,
+        0
+      ]
+    },
+    {
+      "name": "T5d",
+      "region": 2,
+      "offset": 27750,
+      "count": 1620,
+      "nt": {
+        "acetylcholine": 1620
+      },
+      "sign": 1,
+      "sides": [
+        812,
+        808,
+        0
+      ]
+    },
+    {
+      "name": "Tm1",
+      "region": 2,
+      "offset": 29370,
+      "count": 1777,
+      "nt": {
+        "acetylcholine": 1777
+      },
+      "sign": 1,
+      "sides": [
+        887,
+        890,
+        0
+      ]
+    },
+    {
+      "name": "Tm2",
+      "region": 2,
+      "offset": 31147,
+      "count": 1766,
+      "nt": {
+        "acetylcholine": 1766
+      },
+      "sign": 1,
+      "sides": [
+        883,
+        883,
+        0
+      ]
+    },
+    {
+      "name": "Tm3",
+      "region": 2,
+      "offset": 32913,
+      "count": 2054,
+      "nt": {
+        "acetylcholine": 2054
+      },
+      "sign": 1,
+      "sides": [
+        1017,
+        1037,
+        0
+      ]
+    },
+    {
+      "name": "Tm9",
+      "region": 2,
+      "offset": 34967,
+      "count": 1771,
+      "nt": {
+        "acetylcholine": 1771
+      },
+      "sign": 1,
+      "sides": [
+        884,
+        887,
+        0
+      ]
+    },
+    {
+      "name": "LC4",
+      "region": 3,
+      "offset": 36738,
+      "count": 126,
+      "nt": {
+        "acetylcholine": 126
+      },
+      "sign": 1,
+      "sides": [
+        71,
+        55,
+        0
+      ]
+    },
+    {
+      "name": "LC6",
+      "region": 3,
+      "offset": 36864,
+      "count": 124,
+      "nt": {
+        "acetylcholine": 124
+      },
+      "sign": 1,
+      "sides": [
+        59,
+        65,
+        0
+      ]
+    },
+    {
+      "name": "LC9",
+      "region": 3,
+      "offset": 36988,
+      "count": 219,
+      "nt": {
+        "acetylcholine": 219
+      },
+      "sign": 1,
+      "sides": [
+        104,
+        115,
+        0
+      ]
+    },
+    {
+      "name": "LC11",
+      "region": 3,
+      "offset": 37207,
+      "count": 143,
+      "nt": {
+        "acetylcholine": 143
+      },
+      "sign": 1,
+      "sides": [
+        68,
+        75,
+        0
+      ]
+    },
+    {
+      "name": "LPLC1",
+      "region": 3,
+      "offset": 37350,
+      "count": 134,
+      "nt": {
+        "acetylcholine": 134
+      },
+      "sign": 1,
+      "sides": [
+        68,
+        66,
+        0
+      ]
+    },
+    {
+      "name": "LPLC2",
+      "region": 3,
+      "offset": 37484,
+      "count": 185,
+      "nt": {
+        "acetylcholine": 185
+      },
+      "sign": 1,
+      "sides": [
+        94,
+        91,
+        0
+      ]
+    },
+    {
+      "name": "Delta7",
+      "region": 4,
+      "offset": 37669,
+      "count": 42,
+      "nt": {
+        "glutamate": 42
+      },
+      "sign": -1,
+      "sides": [
+        21,
+        21,
+        0
+      ]
+    },
+    {
+      "name": "EPG",
+      "region": 4,
+      "offset": 37711,
+      "count": 46,
+      "nt": {
+        "acetylcholine": 46
+      },
+      "sign": 1,
+      "sides": [
+        23,
+        23,
+        0
+      ]
+    },
+    {
+      "name": "EPGt",
+      "region": 4,
+      "offset": 37757,
+      "count": 4,
+      "nt": {
+        "acetylcholine": 4
+      },
+      "sign": 1,
+      "sides": [
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "ER1_a",
+      "region": 4,
+      "offset": 37761,
+      "count": 11,
+      "nt": {
+        "gaba": 11
+      },
+      "sign": -1,
+      "sides": [
+        5,
+        6,
+        0
+      ]
+    },
+    {
+      "name": "ER1_b",
+      "region": 4,
+      "offset": 37772,
+      "count": 13,
+      "nt": {
+        "gaba": 13
+      },
+      "sign": -1,
+      "sides": [
+        7,
+        6,
+        0
+      ]
+    },
+    {
+      "name": "ER1_c",
+      "region": 4,
+      "offset": 37785,
+      "count": 4,
+      "nt": {
+        "gaba": 4
+      },
+      "sign": -1,
+      "sides": [
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "ER2_a",
+      "region": 4,
+      "offset": 37789,
+      "count": 12,
+      "nt": {
+        "gaba": 12
+      },
+      "sign": -1,
+      "sides": [
+        7,
+        5,
+        0
+      ]
+    },
+    {
+      "name": "ER2_b",
+      "region": 4,
+      "offset": 37801,
+      "count": 4,
+      "nt": {
+        "gaba": 4
+      },
+      "sign": -1,
+      "sides": [
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "ER2_c",
+      "region": 4,
+      "offset": 37805,
+      "count": 20,
+      "nt": {
+        "gaba": 20
+      },
+      "sign": -1,
+      "sides": [
+        10,
+        10,
+        0
+      ]
+    },
+    {
+      "name": "ER2_d",
+      "region": 4,
+      "offset": 37825,
+      "count": 5,
+      "nt": {
+        "gaba": 5
+      },
+      "sign": -1,
+      "sides": [
+        2,
+        3,
+        0
+      ]
+    },
+    {
+      "name": "ER3a_a",
+      "region": 4,
+      "offset": 37830,
+      "count": 15,
+      "nt": {
+        "gaba": 15
+      },
+      "sign": -1,
+      "sides": [
+        8,
+        7,
+        0
+      ]
+    },
+    {
+      "name": "ER3a_b",
+      "region": 4,
+      "offset": 37845,
+      "count": 6,
+      "nt": {
+        "gaba": 6
+      },
+      "sign": -1,
+      "sides": [
+        3,
+        3,
+        0
+      ]
+    },
+    {
+      "name": "ER3a_c",
+      "region": 4,
+      "offset": 37851,
+      "count": 4,
+      "nt": {
+        "gaba": 4
+      },
+      "sign": -1,
+      "sides": [
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "ER3a_d",
+      "region": 4,
+      "offset": 37855,
+      "count": 5,
+      "nt": {
+        "gaba": 5
+      },
+      "sign": -1,
+      "sides": [
+        3,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "ER3d_a",
+      "region": 4,
+      "offset": 37860,
+      "count": 7,
+      "nt": {
+        "gaba": 7
+      },
+      "sign": -1,
+      "sides": [
+        3,
+        4,
+        0
+      ]
+    },
+    {
+      "name": "ER3d_b",
+      "region": 4,
+      "offset": 37867,
+      "count": 20,
+      "nt": {
+        "gaba": 20
+      },
+      "sign": -1,
+      "sides": [
+        10,
+        10,
+        0
+      ]
+    },
+    {
+      "name": "ER3d_c",
+      "region": 4,
+      "offset": 37887,
+      "count": 9,
+      "nt": {
+        "gaba": 9
+      },
+      "sign": -1,
+      "sides": [
+        5,
+        4,
+        0
+      ]
+    },
+    {
+      "name": "ER3d_d",
+      "region": 4,
+      "offset": 37896,
+      "count": 11,
+      "nt": {
+        "gaba": 11
+      },
+      "sign": -1,
+      "sides": [
+        5,
+        6,
+        0
+      ]
+    },
+    {
+      "name": "ER3d_e",
+      "region": 4,
+      "offset": 37907,
+      "count": 7,
+      "nt": {
+        "gaba": 7
+      },
+      "sign": -1,
+      "sides": [
+        3,
+        4,
+        0
+      ]
+    },
+    {
+      "name": "ER3m",
+      "region": 4,
+      "offset": 37914,
+      "count": 18,
+      "nt": {
+        "gaba": 18
+      },
+      "sign": -1,
+      "sides": [
+        9,
+        9,
+        0
+      ]
+    },
+    {
+      "name": "ER3p_a",
+      "region": 4,
+      "offset": 37932,
+      "count": 14,
+      "nt": {
+        "gaba": 14
+      },
+      "sign": -1,
+      "sides": [
+        7,
+        7,
+        0
+      ]
+    },
+    {
+      "name": "ER3p_b",
+      "region": 4,
+      "offset": 37946,
+      "count": 4,
+      "nt": {
+        "gaba": 4
+      },
+      "sign": -1,
+      "sides": [
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "ER3w_a",
+      "region": 4,
+      "offset": 37950,
+      "count": 7,
+      "nt": {
+        "gaba": 7
+      },
+      "sign": -1,
+      "sides": [
+        2,
+        5,
+        0
+      ]
+    },
+    {
+      "name": "ER3w_b",
+      "region": 4,
+      "offset": 37957,
+      "count": 18,
+      "nt": {
+        "gaba": 18
+      },
+      "sign": -1,
+      "sides": [
+        10,
+        8,
+        0
+      ]
+    },
+    {
+      "name": "ER3w_c",
+      "region": 4,
+      "offset": 37975,
+      "count": 6,
+      "nt": {
+        "gaba": 6
+      },
+      "sign": -1,
+      "sides": [
+        3,
+        3,
+        0
+      ]
+    },
+    {
+      "name": "ER4d",
+      "region": 4,
+      "offset": 37981,
+      "count": 26,
+      "nt": {
+        "gaba": 26
+      },
+      "sign": -1,
+      "sides": [
+        13,
+        13,
+        0
+      ]
+    },
+    {
+      "name": "ER4m",
+      "region": 4,
+      "offset": 38007,
+      "count": 11,
+      "nt": {
+        "gaba": 11
+      },
+      "sign": -1,
+      "sides": [
+        5,
+        6,
+        0
+      ]
+    },
+    {
+      "name": "ER5",
+      "region": 4,
+      "offset": 38018,
+      "count": 21,
+      "nt": {
+        "gaba": 21
+      },
+      "sign": -1,
+      "sides": [
+        11,
+        10,
+        0
+      ]
+    },
+    {
+      "name": "ER6",
+      "region": 4,
+      "offset": 38039,
+      "count": 4,
+      "nt": {
+        "gaba": 4
+      },
+      "sign": -1,
+      "sides": [
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "PEG",
+      "region": 4,
+      "offset": 38043,
+      "count": 18,
+      "nt": {
+        "acetylcholine": 18
+      },
+      "sign": 1,
+      "sides": [
+        9,
+        9,
+        0
+      ]
+    },
+    {
+      "name": "PEN_a(PEN1)",
+      "region": 4,
+      "offset": 38061,
+      "count": 20,
+      "nt": {
+        "acetylcholine": 20
+      },
+      "sign": 1,
+      "sides": [
+        10,
+        10,
+        0
+      ]
+    },
+    {
+      "name": "PEN_b(PEN2)",
+      "region": 4,
+      "offset": 38081,
+      "count": 22,
+      "nt": {
+        "acetylcholine": 22
+      },
+      "sign": 1,
+      "sides": [
+        11,
+        11,
+        0
+      ]
+    },
+    {
+      "name": "DNa01",
+      "region": 5,
+      "offset": 38103,
+      "count": 2,
+      "nt": {
+        "acetylcholine": 2
+      },
+      "sign": 1,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "DNa02",
+      "region": 5,
+      "offset": 38105,
+      "count": 2,
+      "nt": {
+        "acetylcholine": 2
+      },
+      "sign": 1,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "DNg13",
+      "region": 5,
+      "offset": 38107,
+      "count": 2,
+      "nt": {
+        "acetylcholine": 2
+      },
+      "sign": 1,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "DNp09",
+      "region": 5,
+      "offset": 38109,
+      "count": 2,
+      "nt": {
+        "acetylcholine": 2
+      },
+      "sign": 1,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "b1 MN",
+      "region": 6,
+      "offset": 38111,
+      "count": 2,
+      "nt": {
+        "unknown": 2
+      },
+      "sign": 0,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "b2 MN",
+      "region": 6,
+      "offset": 38113,
+      "count": 2,
+      "nt": {
+        "acetylcholine": 2
+      },
+      "sign": 1,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "b3 MN",
+      "region": 6,
+      "offset": 38115,
+      "count": 2,
+      "nt": {
+        "unknown": 2
+      },
+      "sign": 0,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "DLMn a, b",
+      "region": 6,
+      "offset": 38117,
+      "count": 2,
+      "nt": {
+        "unknown": 1,
+        "acetylcholine": 1
+      },
+      "sign": 0,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "DLMn c-f",
+      "region": 6,
+      "offset": 38119,
+      "count": 8,
+      "nt": {
+        "unknown": 7,
+        "acetylcholine": 1
+      },
+      "sign": 0,
+      "sides": [
+        4,
+        4,
+        0
+      ]
+    },
+    {
+      "name": "DVMn 1a-c",
+      "region": 6,
+      "offset": 38127,
+      "count": 6,
+      "nt": {
+        "unknown": 6
+      },
+      "sign": 0,
+      "sides": [
+        3,
+        3,
+        0
+      ]
+    },
+    {
+      "name": "DVMn 2a, b",
+      "region": 6,
+      "offset": 38133,
+      "count": 4,
+      "nt": {
+        "unknown": 4
+      },
+      "sign": 0,
+      "sides": [
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "DVMn 3a, b",
+      "region": 6,
+      "offset": 38137,
+      "count": 4,
+      "nt": {
+        "unknown": 4
+      },
+      "sign": 0,
+      "sides": [
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "hg1 MN",
+      "region": 6,
+      "offset": 38141,
+      "count": 2,
+      "nt": {
+        "acetylcholine": 2
+      },
+      "sign": 1,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "hg2 MN",
+      "region": 6,
+      "offset": 38143,
+      "count": 2,
+      "nt": {
+        "acetylcholine": 2
+      },
+      "sign": 1,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "hg3 MN",
+      "region": 6,
+      "offset": 38145,
+      "count": 2,
+      "nt": {
+        "gaba": 2
+      },
+      "sign": -1,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "hg4 MN",
+      "region": 6,
+      "offset": 38147,
+      "count": 2,
+      "nt": {
+        "unknown": 2
+      },
+      "sign": 0,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "i1 MN",
+      "region": 6,
+      "offset": 38149,
+      "count": 2,
+      "nt": {
+        "acetylcholine": 1,
+        "histamine": 1
+      },
+      "sign": 1,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "i2 MN",
+      "region": 6,
+      "offset": 38151,
+      "count": 2,
+      "nt": {
+        "acetylcholine": 2
+      },
+      "sign": 1,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "iii1 MN",
+      "region": 6,
+      "offset": 38153,
+      "count": 2,
+      "nt": {
+        "unknown": 2
+      },
+      "sign": 0,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "iii3 MN",
+      "region": 6,
+      "offset": 38155,
+      "count": 2,
+      "nt": {
+        "unknown": 2
+      },
+      "sign": 0,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "MNwm35",
+      "region": 6,
+      "offset": 38157,
+      "count": 2,
+      "nt": {
+        "unknown": 2
+      },
+      "sign": 0,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "MNwm36",
+      "region": 6,
+      "offset": 38159,
+      "count": 2,
+      "nt": {
+        "acetylcholine": 1,
+        "unknown": 1
+      },
+      "sign": 1,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "ps1 MN",
+      "region": 6,
+      "offset": 38161,
+      "count": 2,
+      "nt": {
+        "histamine": 1,
+        "unknown": 1
+      },
+      "sign": -1,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "ps2 MN",
+      "region": 6,
+      "offset": 38163,
+      "count": 2,
+      "nt": {
+        "unknown": 2
+      },
+      "sign": 0,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "STTMm",
+      "region": 6,
+      "offset": 38165,
+      "count": 4,
+      "nt": {
+        "acetylcholine": 1,
+        "unknown": 3
+      },
+      "sign": 0,
+      "sides": [
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "name": "tp1 MN",
+      "region": 6,
+      "offset": 38169,
+      "count": 2,
+      "nt": {
+        "unknown": 2
+      },
+      "sign": 0,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "tp2 MN",
+      "region": 6,
+      "offset": 38171,
+      "count": 2,
+      "nt": {
+        "unknown": 2
+      },
+      "sign": 0,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "tpn MN",
+      "region": 6,
+      "offset": 38173,
+      "count": 2,
+      "nt": {
+        "unknown": 2
+      },
+      "sign": 0,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "TTMn",
+      "region": 6,
+      "offset": 38175,
+      "count": 2,
+      "nt": {
+        "histamine": 2
+      },
+      "sign": -1,
+      "sides": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "wing MN (untyped)",
+      "region": 6,
+      "offset": 38177,
+      "count": 1,
+      "nt": {
+        "unknown": 1
+      },
+      "sign": 0,
+      "sides": [
+        0,
+        1,
+        0
+      ]
+    }
+  ],
+  "requested_types": [
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "L1",
+    "L2",
+    "L3",
+    "L5",
+    "Am",
+    "C2",
+    "C3",
+    "Mi1",
+    "Tm1",
+    "Tm2",
+    "Tm3",
+    "Tm9",
+    "T4",
+    "T5",
+    "LC4",
+    "LC6",
+    "LC9",
+    "LC11",
+    "LPLC1",
+    "LPLC2",
+    "EPG",
+    "PEN",
+    "PEG",
+    "Delta7",
+    "DNa01",
+    "DNa02",
+    "DNp09",
+    "DNg13",
+    "wing motor neurons"
+  ],
+  "found_types": [
+    "R1-R6",
+    "Am1",
+    "C2",
+    "C3",
+    "L1",
+    "L2",
+    "L3",
+    "L5",
+    "Mi1",
+    "T4a",
+    "T4b",
+    "T4c",
+    "T4d",
+    "T5a",
+    "T5b",
+    "T5c",
+    "T5d",
+    "Tm1",
+    "Tm2",
+    "Tm3",
+    "Tm9",
+    "LC4",
+    "LC6",
+    "LC9",
+    "LC11",
+    "LPLC1",
+    "LPLC2",
+    "Delta7",
+    "EPG",
+    "EPGt",
+    "ER1_a",
+    "ER1_b",
+    "ER1_c",
+    "ER2_a",
+    "ER2_b",
+    "ER2_c",
+    "ER2_d",
+    "ER3a_a",
+    "ER3a_b",
+    "ER3a_c",
+    "ER3a_d",
+    "ER3d_a",
+    "ER3d_b",
+    "ER3d_c",
+    "ER3d_d",
+    "ER3d_e",
+    "ER3m",
+    "ER3p_a",
+    "ER3p_b",
+    "ER3w_a",
+    "ER3w_b",
+    "ER3w_c",
+    "ER4d",
+    "ER4m",
+    "ER5",
+    "ER6",
+    "PEG",
+    "PEN_a(PEN1)",
+    "PEN_b(PEN2)",
+    "DNa01",
+    "DNa02",
+    "DNg13",
+    "DNp09"
+  ],
+  "missing_types": [],
+  "nt_field": "predicted_nt per body, celltype_predicted_nt when absent",
+  "nt_sign_map": {
+    "acetylcholine": 1,
+    "gaba": -1,
+    "glutamate": -1,
+    "histamine": -1,
+    "dopamine": 0,
+    "octopamine": 0,
+    "serotonin": 0,
+    "unknown": 0,
+    "unclear": 0
+  },
+  "nt_unknown_count": 48,
+  "thresholds": {
+    "base_min_weight": 2,
+    "pair_overrides": [],
+    "dropped_edges_threshold": 282981,
+    "dropped_synapses_threshold": 282981,
+    "dropped_edges_unknown_sign": 192
+  },
+  "photoreceptors": {
+    "n": 3377,
+    "grid": [
+      40,
+      40
+    ],
+    "eyes": 2,
+    "from_hex_columns": 3336,
+    "from_hash": 41,
+    "assignment": "hex column of the strongest lamina target (assignedOlHex1/2); hash fallback"
+  },
+  "files": {
+    "neurons": "neurons.d19798da.fwb",
+    "neurons_bytes": 572720,
+    "neurons_bytes_gz": 111036,
+    "connectome": "connectome.d19798da.fwb",
+    "connectome_bytes": 3511240,
+    "connectome_bytes_gz": 1418280
+  }
+}

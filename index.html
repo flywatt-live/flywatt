@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FLYWATT</title>
+    <meta name="description" content="A fruit fly connectome, wired to a light bulb." />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#08070a" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="canonical" href="https://flywatt.live/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FLYWATT" />
+    <meta property="og:description" content="A fruit fly connectome, wired to a light bulb." />
+    <meta property="og:url" content="https://flywatt.live/" />
+    <meta property="og:image" content="https://flywatt.live/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@flywatt" />
+    <meta name="twitter:title" content="FLYWATT" />
+    <meta name="twitter:description" content="A fruit fly connectome, wired to a light bulb." />
+    <meta name="twitter:image" content="https://flywatt.live/og.png" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
+    <link rel="preload" href="/fonts/Basteleur-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Basteleur-Moonlight.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/DepartureMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/src/styles/tokens.css" />
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="stylesheet" href="/src/styles/layout.css" />
+    <link rel="stylesheet" href="/src/styles/panels.css" />
+    <link rel="stylesheet" href="/src/styles/hero.css" />
+  </head>
+  <body>
+    <nav class="rail" id="rail" aria-label="sections"></nav>
+    <a class="xlink" id="xlink" href="https://x.com/flywatt" target="_blank" rel="noopener" aria-label="FLYWATT on X">
+      <span class="brand">FLYWATT</span>
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+      </svg>
+    </a>
+
+    <main id="main">
+      <section class="hero" id="apparatus" data-section="apparatus">
+        <canvas class="scene" id="scene" aria-hidden="true"></canvas>
+        <img class="poster" id="poster" alt="A glass bell jar with a fly inside, a copper wire running to an incandescent bulb in a brass socket, a meter beside it" hidden />
+        <header class="masthead">
+          <h1 class="wordmark">FLYWATT</h1>
+          <p class="tagline" id="tagline"></p>
+          <p class="tagline sub" id="tagline-sub"></p>
+        </header>
+        <div class="hud" id="hud">
+          <div class="readout-l" id="watt" aria-live="off">0 W</div>
+          <div class="label" id="watt-label">current draw</div>
+          <div class="hud-stats" id="hud-stats"></div>
+        </div>
+        <aside class="minis" id="minis" aria-label="live panels"></aside>
+        <div class="hud-formula" id="hud-formula" aria-label="the arithmetic, live"></div>
+        <div class="loadline readout" id="loadline"></div>
+        <div class="hint readout" id="hero-hint"></div>
+      </section>
+
+      <section class="wire" id="wire" data-section="the wire">
+        <header class="section-head">
+          <h1>the wire</h1>
+          <p class="section-intro" id="wire-intro"></p>
+        </header>
+        <div class="wire-track" id="wire-track">
+          <div class="panel panel-stim" id="p-stim">
+            <div class="panel-head"><span class="panel-title"></span><span class="panel-unit readout"></span></div>
+            <canvas></canvas>
+            <div class="panel-foot readout"></div>
+          </div>
+          <div class="panel panel-raster" id="p-raster">
+            <div class="panel-head"><span class="panel-title"></span><span class="panel-unit readout"></span></div>
+            <canvas></canvas>
+            <div class="panel-foot readout"></div>
+          </div>
+          <div class="panel panel-rates" id="p-rates">
+            <div class="panel-head"><span class="panel-title"></span><span class="panel-unit readout"></span></div>
+            <canvas></canvas>
+            <div class="panel-foot readout"></div>
+          </div>
+          <div class="panel panel-sum" id="p-sum">
+            <div class="panel-head"><span class="panel-title"></span><span class="panel-unit readout"></span></div>
+            <canvas></canvas>
+            <div class="panel-foot readout"></div>
+          </div>
+          <div class="panel panel-smooth" id="p-smooth">
+            <div class="panel-head"><span class="panel-title"></span><span class="panel-unit readout"></span></div>
+            <canvas></canvas>
+            <div class="panel-foot readout"></div>
+          </div>
+          <div class="panel panel-gain" id="p-gain">
+            <div class="panel-head"><span class="panel-title"></span><span class="panel-unit readout"></span></div>
+            <canvas></canvas>
+            <div class="panel-foot readout"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="circuit" id="circuit" data-section="the circuit">
+        <header class="section-head">
+          <h1>the circuit</h1>
+          <p class="section-intro" id="circuit-intro"></p>
+        </header>
+        <div class="section-grid circuit-grid">
+          <div>
+            <div class="table-wrap"><table class="circuit-table" id="circuit-table"></table></div>
+            <p class="fraction" id="circuit-fraction"></p>
+          </div>
+          <aside class="side" id="circuit-side">
+            <div class="counts" id="circuit-counts"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="arithmetic" id="arithmetic" data-section="the arithmetic">
+        <header class="section-head">
+          <h1>the arithmetic</h1>
+        </header>
+        <div class="section-grid arith-grid">
+          <div>
+            <div class="formula" id="formula"></div>
+            <div class="prose" id="arithmetic-prose"></div>
+          </div>
+          <aside class="side panel panel-text" id="ledger">
+            <div class="panel-head"><span class="panel-title"></span><span class="panel-unit readout"></span></div>
+            <dl class="ledger-list readout"></dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="record" id="record" data-section="the record">
+        <header class="section-head">
+          <h1>the record</h1>
+          <p class="section-intro" id="record-intro"></p>
+        </header>
+        <div class="record-grid" id="record-grid">
+          <div class="panel" id="r-energy">
+            <div class="panel-head"><span class="panel-title"></span><span class="panel-unit readout"></span></div>
+            <canvas></canvas>
+          </div>
+          <div class="panel" id="r-hist">
+            <div class="panel-head"><span class="panel-title"></span><span class="panel-unit readout"></span></div>
+            <canvas></canvas>
+          </div>
+          <div class="panel" id="r-phase">
+            <div class="panel-head"><span class="panel-title"></span><span class="panel-unit readout"></span></div>
+            <canvas></canvas>
+          </div>
+          <div class="panel panel-text" id="r-peaks">
+            <div class="panel-head"><span class="panel-title"></span><span class="panel-unit readout"></span></div>
+            <dl class="peaks readout"></dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="provenance" id="provenance" data-section="provenance">
+        <header class="section-head">
+          <h1>provenance</h1>
+        </header>
+        <div class="section-grid prov-grid">
+          <ul class="provenance-list" id="provenance-list"></ul>
+          <dl class="params readout" id="params"></dl>
+        </div>
+      </section>
+
+      <footer class="footer" id="footer">
+        <button class="plate" id="contract" type="button"></button>
+        <nav class="footer-links" id="footer-links" aria-label="links"></nav>
+      </footer>
+    </main>
+    <div class="grain" aria-hidden="true"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

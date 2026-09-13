@@ -1,0 +1,28 @@
+# FLYWATT on Hostinger (Apache / LiteSpeed). Static site, no rewrites.
+
+# the simulation binaries are gzip bytes inside .fwb files; the page inflates them itself
+AddType application/octet-stream .fwb
+<FilesMatch "\.fwb$">
+  RemoveEncoding .fwb
+  Header set Content-Encoding "identity"
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+
+AddType font/woff2 .woff2
+AddType text/markdown .md
+AddType model/gltf-binary .glb
+AddType image/svg+xml .svg
+
+<FilesMatch "\.(woff2|png|jpg|svg|glb)$">
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+<FilesMatch "\.(js|css)$">
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+<FilesMatch "\.(html|json|txt|md)$">
+  Header set Cache-Control "no-cache"
+</FilesMatch>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json text/plain text/markdown
+</IfModule>
