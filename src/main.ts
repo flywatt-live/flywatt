@@ -15,6 +15,7 @@ import { mountFallback } from './ui/fallback.js';
 import { mountHotspots } from './ui/hotspots.js';
 import { mountMinis } from './panels/mini.js';
 import { hero } from './copy/en.js';
+import { applyLaunchFile } from './launch.js';
 import type { Apparatus } from './scene/apparatus.js';
 
 const params = new URLSearchParams(location.search);
@@ -23,7 +24,8 @@ if (params.get('og') === '1') {
   // dev-only capture page for the OG image and the poster
   import('./tools/og.js').then((mod) => mod.mountOg());
 } else {
-  boot();
+  // launch.json first: the contract, the dex link and the switch-on time may be edited on the server
+  applyLaunchFile().then(boot);
 }
 
 function boot() {

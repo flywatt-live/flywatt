@@ -169,7 +169,7 @@ The bulb on the page is not powered by this; it is a rendering whose brightness 
 - **The wire.** Six canvas panels: stimulus (both eyes, per hex column), the raster wall (every neuron, 1 px per 5 ms, regions banded), regional rates, the window sum S, smoothing L and L_s, gain. A pinned horizontal track with motion, a stacked column without.
 - **The circuit.** All 89 types, counts, region, predicted transmitter, live rate; hovering a row finds its neurons on the raster wall.
 - **The arithmetic and the record.** The formula, live; a ledger of spikes, energy and time since launch; the rate histogram, per-phase mean power, peaks.
-- **Launch clock.** `launch.at` in `src/copy/en.ts` is when the apparatus was switched on. The stimulus clock continues from it, so every visitor sees the same phase, and energy before the page opened is estimated at the calibrated mean rate and labelled as such.
+- **Launch clock.** `public/launch.json` (falling back to `launch.at` in `src/copy/en.ts`) is when the apparatus was switched on; the same file carries the contract address and the dex link, so launch-day values are edited on the server without a rebuild. The stimulus clock continues from it, so every visitor sees the same phase, and energy before the page opened is estimated at the calibrated mean rate and labelled as such.
 
 The worker never runs ahead of wall time. It needs 2,000 steps per second; on a machine that cannot manage that, simulated time runs slower than wall time and the page says so (`sim speed 0.8×`). Counters use simulated time either way.
 
