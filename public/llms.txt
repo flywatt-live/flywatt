@@ -1,10 +1,10 @@
-# FLYWATT
+# WATT THE FLY
 
 > A fruit fly connectome, wired to a light bulb.
 
 https://flywatt.live
 
-FLYWATT is a single page. A leaky integrate-and-fire simulation of 38,178 neurons and 5,124,215 synapses from the Janelia FlyEM Male CNS connectome v1.0 (CC BY 4.0) runs in a Web Worker. Its spikes drive an incandescent bulb in a three.js scene; the bulb is the page's only light. Power is spike rate times 31.9 pJ per action potential (an estimate from Attwell and Laughlin 2001). Every number on the page is read from the running simulation or from the data files; nothing is hardcoded. No live insect, no hardware.
+WATT THE FLY is a single page. A leaky integrate-and-fire simulation of 38,178 neurons and 5,124,215 synapses from the Janelia FlyEM Male CNS connectome v1.0 (CC BY 4.0) runs in a Web Worker. Its spikes drive an incandescent bulb in a three.js scene; the bulb is the page's only light. Power is spike rate times 31.9 pJ per action potential (an estimate from Attwell and Laughlin 2001). Every number on the page is read from the running simulation or from the data files; nothing is hardcoded. No live insect, no hardware.
 
 ## Sections
 

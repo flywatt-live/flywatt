@@ -1,5 +1,5 @@
 // Dev-only capture page: /?og=1 renders the apparatus at a fixed brightness and offers
-// og.png (1200 x 630, with the word FLYWATT) and poster.jpg (1600 x 900, no text) to save
+// og.png (1200 x 630, with the site title) and poster.jpg (1600 x 900, no text) to save
 // into public/. Manual on purpose: the brief asks for eyes on this render before it ships.
 import { SimBridge } from '../sim/bridge.js';
 import { createApparatus } from '../scene/apparatus.js';
@@ -43,7 +43,7 @@ export async function mountOg() {
     const ctx = out.getContext('2d')!;
     ctx.drawImage(stage, 0, 0, w, h);
     if (withText) {
-      ctx.font = `700 ${Math.round(h * 0.19)}px Basteleur, serif`;
+      ctx.font = `700 ${Math.round(h * 0.13)}px Basteleur, serif`;
       ctx.fillStyle = 'rgba(232,220,192,0.96)';
       ctx.textBaseline = 'alphabetic';
       ctx.textAlign = 'left';

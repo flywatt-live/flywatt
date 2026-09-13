@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code, cite it; if you use the numbers, cite the dataset and the two papers below."
-title: "FLYWATT: a fruit fly connectome, wired to a light bulb"
+title: "WATT THE FLY: a fruit fly connectome, wired to a light bulb"
 type: software
 url: "https://flywatt.live"
 license: MIT

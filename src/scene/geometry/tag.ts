@@ -63,12 +63,14 @@ export function buildTag(pal: PaletteColors, x: number, z: number, yaw: number):
   group.add(back);
   group.position.set(x, BENCH_Y, z);
   group.rotation.y = yaw;
+  group.visible = false; // a blank tag is worse than no tag: shown once it is written
   return {
     group,
     write(lines) {
       const u = (mat as THREE.ShaderMaterial).uniforms;
       u.uMap.value = tagTexture(lines);
       u.uUseMap.value = 1;
+      group.visible = true;
     },
   };
 }

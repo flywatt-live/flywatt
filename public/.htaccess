@@ -1,4 +1,4 @@
-# FLYWATT on Hostinger (Apache / LiteSpeed). Static site, no rewrites.
+# WATT THE FLY on Hostinger (Apache / LiteSpeed). Static site, no rewrites.
 
 # the simulation binaries are gzip bytes inside .fwb files; the page inflates them itself
 AddType application/octet-stream .fwb

@@ -1,4 +1,4 @@
-# FLYWATT
+# WATT THE FLY
 
 A fruit fly connectome, wired to a light bulb. **https://flywatt.live**
 

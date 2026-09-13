@@ -53,11 +53,11 @@ function dialTexture(): THREE.CanvasTexture {
       ctx.fillText(String(i / 10 * 10), cx + Math.cos(a) * (R - 72), cy + Math.sin(a) * (R - 72));
     }
   }
-  ctx.font = `700 60px ${SERIF}`;
+  ctx.font = `700 44px ${SERIF}`;
   ctx.fillStyle = pal.ink;
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  ctx.fillText('FLYWATT', cx, c.height * 0.4);
+  ctx.fillText('WATT THE FLY', cx, c.height * 0.4);
   ctx.font = `26px ${MONO}`;
   ctx.fillText('µW', cx, c.height * 0.55);
   ctx.font = `20px ${MONO}`;

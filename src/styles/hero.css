@@ -11,7 +11,7 @@
 .wordmark {
   font-family: var(--font-serif);
   font-weight: 700;
-  font-size: clamp(48px, 7vw, 112px);
+  font-size: clamp(40px, 5.4vw, 88px);
   line-height: 1;
   letter-spacing: 0.01em;
   color: rgb(232 220 192 / calc(0.55 + 0.45 * var(--lum)));

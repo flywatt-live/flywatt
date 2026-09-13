@@ -8,7 +8,7 @@ export const launch = {
 };
 
 export const site = {
-  title: 'FLYWATT',
+  title: 'WATT THE FLY',
   ogDescription: 'A fruit fly connectome, wired to a light bulb.',
   url: 'https://flywatt.live',
   xUrl: 'https://x.com/flywatt',
